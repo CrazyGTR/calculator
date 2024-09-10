@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./Assets/back.jpg);
+    background-size: cover;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+div button {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    background-color: rgba(26, 24, 24, 0.918);
+    color: rgb(20, 73, 185);
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgba(240, 248, 255, 0.61);
+}
+button:active{
+    background-color: beige;
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: none;
+    border-radius: 20px;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: right;
+    padding: 0;
+}
+
+.allClear {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 150px;
+    background-color: rgb(51, 54, 53);
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 150px;
+}
+
+.equal {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    height: 150px;
+    background-color: rgb(73, 155, 221);
+    color: white;
+}
+.equal:hover{
+    background-color: rgba(125, 125, 177, 0.651);
+    color: black;
+}
+.equal:active{
+    background-color: beige;
+}
+.operators {
+    background-color: rgb(22, 6, 114);
+    color: aliceblue;
+}
+.operators:hover{
+    background-color: rgb(25, 164, 206);
+    color: black;
+}
+.operators:active{
+    background-color: beige;
+}
